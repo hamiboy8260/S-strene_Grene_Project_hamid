@@ -1,16 +1,13 @@
 
 /* Goole fonte listet forneden: */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 
 /* CSS root (variabler) */
 
-:root{
---main-headingfont: 'Poppins', sans-serif; 
---main-textfont: 'Noto Serif', serif;
+:root{ 
+--main-font: 'Noto Serif', serif;
 }
 
 
@@ -172,6 +169,7 @@
         width: 100%;
         z-index: 2;
         top: 0px;
+        height: 120px;
         
     }
     
@@ -183,18 +181,12 @@
         
     }
     
-    .header .menu{
-    clear: both;
-    max-height: 0;
-    transition:max-height .2s ease-out;
-        
-    }
     
     #logo{
     width: 20%;
     margin: 0 auto;
     display: block;
-        margin-top: 10%
+        margin-top: 5%
     
 }
   
@@ -225,7 +217,7 @@
     
     align-items: center;
     text-align: center;
-    font-family: var(--main-textfont);
+    font-family: var(--main-font);
     justify-content: center;
         
     background-color:#faf7f2;
@@ -237,7 +229,7 @@
     line-height: 1.5;
     margin-right: 4%;
     color: #504139;
-    font-family: serif;
+    font-family: var(--main-font);
     text-align: left;
     
     }
@@ -246,16 +238,17 @@
         margin-top: 50%;
         text-align: center;
         color: #504139;
+        font-family:var(--main-font); 
     }
     
     .box-1 button{
     color: #FAF7F2;
     background-color: #504139;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     margin-bottom: 30%;
     font-size: 100%;
     padding: 10px 32px;
-        font-family: sans-serif;
+    
    
     }
     
@@ -287,7 +280,7 @@ margin-top: 20px;
     
     align-items: center;
     text-align: center;
-    font-family: var(--main-textfont);
+    font-family: var(--main-font);
     justify-content: center;
         
     background-color:#faf7f2;
@@ -296,7 +289,7 @@ margin-top: 20px;
     
     .box-2 h3{
         
-        font-size: 150%;
+        font-size: 160%;
         position: relative;
         color: #504139;
         
@@ -304,10 +297,12 @@ margin-top: 20px;
     
     .box-2 h5{
     
-    margin-top: -4%;
+    margin-top: -6%;
     margin-left:5%;
     color: #504139;
-        position: relative;
+    position: relative;
+    font-weight: 900;
+    font-size: 100%;
 
     
     
@@ -319,7 +314,7 @@ margin-top: 20px;
     line-height: 1.5;
     margin-right: 4%;
     color: #504139;
-    font-family: serif;
+    font-family: var(--main-font);
     
     
     }
@@ -327,12 +322,11 @@ margin-top: 20px;
     .box-2 button{
     color: #FAF7F2;
     background-color: #504139;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     margin-bottom: 30%;
     font-size: 100%;
     padding: 10px 32px;
     text-align: center;
-        font-family:sans-serif;
    
         
         
@@ -367,6 +361,7 @@ margin-top: 20px;
 
      }
     
+    
     .box-3{
         
         text-align: center;
@@ -377,6 +372,17 @@ margin-top: 20px;
         flex-flow: wrap;
         font-family: var(--main-textfont);
         justify-content: center;
+        
+        
+
+     }
+    
+    
+      .box-3 b{
+        
+        text-align: center;
+        color:#504139;
+        font-size: 120%;
         
         
 
@@ -398,6 +404,7 @@ margin-top: 20px;
     div.desc{
         
         text-align: center;
+        
     }
     
     
@@ -409,7 +416,8 @@ margin-top: 20px;
     }
     
     .kontakt-indhold h2{
-    color: #FAF7F2    
+    color: #FAF7F2;
+    
     }
     
  
@@ -436,6 +444,7 @@ ul.kontakt-indhold{
     margin-top: 20px;
     list-style: none;
     margin-bottom: 20px;
+
     
     
    
@@ -447,6 +456,7 @@ ul.kontakt-indhold{
     margin-top: 20px;
     color: #FAF7F2;
     font-size: 100%;
+    
     
     
 }
@@ -471,7 +481,7 @@ ul.kontakt-indhold{
         width: 64px;
         background:#504139;
         color: #FAF7F2;
-        font-family:sans-serif;
+        font-family:var(--main-font);
         font-weight: 300;
         
        
@@ -480,7 +490,7 @@ ul.kontakt-indhold{
     
   
 .kontakt-indhold li i{
-    font-size: 40px;
+    font-size: 210%;
     color:#FAF7F2;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -500,6 +510,7 @@ color: #FAF7F2;
     footer h6{
         text-align: center;
         color: #504139;
+        
     }
 
 
