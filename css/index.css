@@ -4,10 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 
+
+
 /* CSS root (variabler) */
 
-:root{ 
---main-font: 'Noto Serif', serif;
+:root{
+--main-font: 'PT Serif', serif; 
+
 }
 
 
@@ -151,6 +154,7 @@
 {
   padding: 10px 0;
   font-size: 22px;
+font-family:var(--main-font);
 }
 
 /*
